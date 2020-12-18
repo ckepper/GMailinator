@@ -9,20 +9,23 @@
 #import <Cocoa/Cocoa.h>
 
 @interface SearchPopup : NSObject {
-	IBOutlet NSSearchField* searchField;
-	IBOutlet NSWindow* searchWindow;
-    NSMenu* submenu;
-	NSMutableArray* currentResults;
-	NSDictionary* selectedResult;
-	IBOutlet NSTableView* resultViewer;
+    IBOutlet NSSearchField *searchField;
+    IBOutlet NSWindow *searchWindow;
+    NSMenu *submenu;
+    NSMutableArray *currentResults;
+    NSDictionary *selectedResult;
+    IBOutlet NSTableView *resultViewer;
 }
 
 //+ (id)popupWithSubmenu:(NSMenu *)submenu andParent:(SearchManager*) parent;
 - (id)init;
-- (void)setSubmenu:(NSMenu*) sm;
-- (void)addMenu:(NSMenu *)menu toDictionary:(NSMutableDictionary*)dict withPath:(NSMutableArray *)array atLevel:(int)level;
-- (void)showWithSender: sender andTitle:(NSString *)title;
-- (IBAction)doSearch: sender;
-- (IBAction)changeSelection: sender;
+- (void)setSubmenu:(NSMenu *)sm;
+- (void)addMenu:(NSMenu *)menu
+    toDictionary:(NSMutableDictionary *)dict
+        withPath:(NSMutableArray *)array
+         atLevel:(int)level;
+- (void)showWithSender:sender andTitle:(NSString *)title;
+- (IBAction)doSearch:sender;
+- (IBAction)changeSelection:sender;
 
 @end

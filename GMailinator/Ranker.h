@@ -13,10 +13,10 @@
 extern "C" {
 #endif
 
-bool is_subset (NSString *needle, NSString *haystack);
+bool is_subset(NSString *needle, NSString *haystack);
 
-double calculate_rank (NSString *left, NSString *right);
-    
+double calculate_rank(NSString *left, NSString *right);
+
 #ifdef __cplusplus
 }
 #endif

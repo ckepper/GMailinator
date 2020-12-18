@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Eelco Lempsink. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "SearchManager.h"
+#import <Foundation/Foundation.h>
 
 @interface GMailinator : NSObject {
-    SearchManager* sm;
+    SearchManager *sm;
 }
 
 + (void)registerBundle;
